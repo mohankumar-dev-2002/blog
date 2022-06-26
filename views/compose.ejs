@@ -1,0 +1,13 @@
+<%-include("partials/header.ejs"); -%>
+<h1>Compose</h1>
+<form class="" action="/compose" method="post">
+
+  <label for="titleInput" class="labelStyle">Title</label>
+  <input style="width:70em; height:40px ;  margin-bottom:30px" type="text" class="textInput" placeholder="title" name="titleInput" required autocomplete="off">
+
+  <label for="contentInput" class="labelStyle">Content</label>
+  <textarea  name="contentInput" rows="8" cols="115" class="textInput" placeholder="write here" required autocomplete="off"></textarea>
+  <button type="submit" name="button" class="btn btn-primary btnCompose">Publish</button>
+</form>
+
+<%-include("partials/footer.ejs");-%>
